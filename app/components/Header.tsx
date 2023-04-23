@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 bg-white z-50 shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,.15)] flex items-center transition-all duration-300 ease-linear"
+      className="fixed inset-x-0 top-0 bg-white z-50 shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,.15)] flex items-center transition-all duration-300 ease-linear h-[7.5rem]"
       ref={headerRef}
     >
       <div className="flex items-center justify-between px-6 py-4 max-w-screen-xl w-full m-auto">

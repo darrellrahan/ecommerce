@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 function Hero() {
   return (
     <section id="hero">
-      <div className="px-6 h-screen flex items-end py-28 relative">
+      <div className="px-6 h-screen flex items-center relative">
         <Link
           href="/"
           className="absolute bottom-8 inset-x-1/2 animate-bounce text-3xl"
