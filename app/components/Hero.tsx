@@ -10,7 +10,7 @@ function Hero() {
       <div className="px-6 h-screen flex items-center relative">
         <Link
           href="/"
-          className="absolute bottom-12 inset-x-1/2 animate-bounce text-3xl"
+          className="absolute bottom-16 inset-x-1/2 animate-bounce text-3xl"
         >
           <IoIosArrowDown />
         </Link>
