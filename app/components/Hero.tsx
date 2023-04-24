@@ -6,7 +6,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <section id="hero">
-      <div className="px-6 py-5 h-screen flex items-end">
+      <div className="px-6 mt-36">
         <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full">
           {heroGrid.map((data) => (
             <Link href={data.url} key={data.id} className="relative">

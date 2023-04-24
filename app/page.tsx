@@ -8,7 +8,6 @@ export default function Home() {
       <Header />
       <MobileNavbar />
       <Hero />
-      <Hero />
     </main>
   );
 }
