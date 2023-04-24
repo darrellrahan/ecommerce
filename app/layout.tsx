@@ -1,5 +1,12 @@
 import { TogglerProvider } from "./context/toggler";
 import "./globals.css";
+import { Blinker } from "next/font/google";
+
+const blinker = Blinker({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-blinker",
+});
 
 export const metadata = {
   title: "Raouf Store",
@@ -15,7 +22,7 @@ export default function RootLayout({
   return (
     <TogglerProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body className={`${blinker.className}`}>{children}</body>
       </html>
     </TogglerProvider>
   );
