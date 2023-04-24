@@ -2,18 +2,11 @@ import React from "react";
 import { heroGrid } from "../data/content";
 import Link from "next/link";
 import Image from "next/image";
-import { IoIosArrowDown } from "react-icons/io";
 
 function Hero() {
   return (
     <section id="hero">
-      <div className="px-6 h-screen flex items-center relative">
-        <Link
-          href="/"
-          className="absolute bottom-16 inset-x-1/2 animate-bounce text-3xl"
-        >
-          <IoIosArrowDown />
-        </Link>
+      <div className="px-6 py-5 h-screen flex items-end">
         <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full">
           {heroGrid.map((data) => (
             <Link href={data.url} key={data.id} className="relative">
