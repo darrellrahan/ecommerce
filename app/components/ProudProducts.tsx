@@ -2,6 +2,7 @@ import React from "react";
 import { products } from "../data/data";
 import Image from "next/image";
 import Link from "next/link";
+import ItemCard from "./ItemCard";
 
 function Proud() {
   return (
@@ -12,25 +13,12 @@ function Proud() {
           {products
             .filter((data) => data.proud)
             .map((data) => (
-              <Link
-                href="/"
+              <ItemCard
                 key={data.id}
-                className="border-2 border-[rgba(0,0,0,.205)] hover:border-black transition-all duration-300 ease-linear flex flex-col gap-8"
-              >
-                <div>
-                  <Image
-                    src={data.img.display}
-                    alt={data.name}
-                    width={900}
-                    height={900}
-                    className="m-auto"
-                  />
-                </div>
-                <div className="m-4 space-y-2">
-                  <h3 className="font-medium text-lg">{data.name}</h3>
-                  <h1 className="font-bold text-xl">${data.price}</h1>
-                </div>
-              </Link>
+                img={data.img.display}
+                name={data.name}
+                price={data.price}
+              />
             ))}
         </div>
       </div>

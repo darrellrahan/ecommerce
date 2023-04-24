@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MobileNavbar from "./components/MobileNavbar";
 import Proud from "./components/ProudProducts";
+import Trending from "./components/Trending";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Proud />
         <Banner />
+        <Trending />
       </div>
     </main>
   );

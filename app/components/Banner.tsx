@@ -14,7 +14,7 @@ function Banner() {
           </p>
           <Link
             href="/"
-            className="bg-black text-white py-2 px-3 text-lg font-bold"
+            className="bg-black text-white py-2 px-4 text-lg font-bold border-2 border-black hover:bg-transparent hover:text-black transition-all duration-300 ease-linear"
           >
             SHOP NOW
           </Link>
