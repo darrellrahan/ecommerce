@@ -6,12 +6,14 @@ import Proud from "./components/ProudProducts";
 
 export default function Home() {
   return (
-    <main className="px-6 space-y-16">
+    <main>
       <Header />
       <MobileNavbar />
-      <Hero />
-      <Proud />
-      <Banner />
+      <div className="px-6 space-y-16">
+        <Hero />
+        <Proud />
+        <Banner />
+      </div>
     </main>
   );
 }
