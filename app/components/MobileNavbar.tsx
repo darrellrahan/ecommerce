@@ -4,6 +4,7 @@ import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { useTogglerContext } from "../context/toggler";
 import Link from "next/link";
+import { categories } from "../data/data";
 
 function MobileNavbar() {
   const { mobileNavbar, setMobileNavbar } = useTogglerContext();
@@ -21,76 +22,19 @@ function MobileNavbar() {
         <AiOutlineClose />
       </button>
       <ul className="flex flex-col items-center gap-8 font-medium text-2xl">
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            CATEGORIES
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            FURNITURE
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            ELECTRONIC
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            LAMP
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            KITCHEN
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            CHAIR
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/"
-            onClick={() => {
-              setMobileNavbar(false);
-            }}
-          >
-            SKIN CARE
-          </Link>
-        </li>
+        {categories.map((data) => (
+          <li key={data.id}>
+            <Link
+              href={data.url}
+              onClick={() => {
+                setMobileNavbar(false);
+              }}
+              className="uppercase"
+            >
+              {data.category === "All" ? "categories" : data.category}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

@@ -6,6 +6,7 @@ export const products = [
     price: 986,
     proud: true,
     trending: false,
+    category: "chair",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const products = [
     price: 49,
     proud: true,
     trending: false,
+    category: "kitchen",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const products = [
     price: 254,
     proud: true,
     trending: false,
+    category: "lamp",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const products = [
     price: 79,
     proud: true,
     trending: false,
+    category: "furniture",
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const products = [
     price: 847,
     proud: true,
     trending: false,
+    category: "lamp",
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const products = [
     price: 65,
     proud: true,
     trending: false,
+    category: "skincare",
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const products = [
     price: 120,
     proud: true,
     trending: false,
+    category: "lamp",
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const products = [
     price: 115,
     proud: false,
     trending: true,
+    category: "furniture",
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const products = [
     price: 161,
     proud: false,
     trending: true,
+    category: "furniture",
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const products = [
     price: 89,
     proud: false,
     trending: true,
+    category: "chair",
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const products = [
     price: 160,
     proud: false,
     trending: true,
+    category: "lamp",
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const products = [
     price: 220,
     proud: false,
     trending: true,
+    category: "lamp",
   },
   {
     id: 13,
@@ -102,28 +114,121 @@ export const products = [
     price: 33,
     proud: false,
     trending: true,
+    category: "skincare",
+  },
+  {
+    id: 14,
+    name: "Comfy Chair",
+    img: { display: "/images/products/chair/comfy-chair/display.jpg" },
+    price: 119,
+    proud: false,
+    trending: false,
+    category: "chair",
+  },
+  {
+    id: 15,
+    name: "Copenhagen Armchair",
+    img: { display: "/images/products/chair/copenhagen/display.jpg" },
+    price: 330,
+    proud: false,
+    trending: false,
+    category: "chair",
+  },
+  {
+    id: 16,
+    name: "Anti Dark Light",
+    img: { display: "/images/products/electronic/anti-dark/display.jpg" },
+    price: 120,
+    proud: false,
+    trending: false,
+    category: "electronic",
+  },
+  {
+    id: 17,
+    name: "Table Lamp",
+    img: { display: "/images/products/lamp/table-lamp/display.png" },
+    price: 75,
+    proud: false,
+    trending: false,
+    category: "lamp",
+  },
+  {
+    id: 18,
+    name: "Mat Black Lamp",
+    img: { display: "/images/products/lamp/mat-black/display.png" },
+    price: 175,
+    proud: false,
+    trending: false,
+    category: "lamp",
+  },
+  {
+    id: 19,
+    name: "Body Oil 50ml",
+    img: { display: "/images/products/skincare/body-oil/display.jpg" },
+    price: 45,
+    proud: false,
+    trending: false,
+    category: "skincare",
   },
 ];
 
 export const heroGrid = [
   {
     id: 1,
-    url: "/furniture",
+    url: "/categories/furniture",
     text: "Live Comfortably",
   },
   {
     id: 2,
-    url: "/skincare",
+    url: "/categories/skincare",
     text: "HW Skincare",
   },
   {
     id: 3,
-    url: "/kitchen",
+    url: "/categories/kitchen",
     text: "Kitchen & Dining",
   },
   {
     id: 4,
-    url: "/electronic",
+    url: "/categories/electronic",
     text: "Home Electronic",
+  },
+];
+
+export const categories = [
+  {
+    id: 1,
+    url: "/categories/all",
+    category: "All",
+  },
+  {
+    id: 2,
+    url: "/categories/furniture",
+    category: "Furniture",
+  },
+  {
+    id: 3,
+    url: "/categories/electronic",
+    category: "Electronic",
+  },
+  {
+    id: 4,
+    url: "/categories/lamp",
+    category: "Lamp",
+  },
+  {
+    id: 5,
+    url: "/categories/kitchen",
+    category: "Kitchen",
+  },
+  {
+    id: 6,
+    url: "/categories/chair",
+    category: "Chair",
+  },
+  {
+    id: 7,
+    url: "/categories/skincare",
+    category: "Skincare",
   },
 ];

@@ -14,27 +14,25 @@ function ItemCard({
   slider?: boolean;
 }) {
   return (
-    <div className={slider ? "flex-none w-56" : ""}>
+    <div className={slider ? "flex-none max-w-[15.75rem]" : ""}>
       <Link
         href="/"
         className={`border-2 border-[rgba(0,0,0,.205)] hover:border-black transition-all duration-300 ease-linear flex flex-col ${
-          slider ? "gap-0" : "gap-8"
+          slider ? "gap-0 h-full justify-between" : "gap-8"
         }`}
       >
         <div>
           <Image
             src={img}
             alt={name}
-            width={900}
-            height={900}
-            className="m-auto"
+            width={1000}
+            height={1000}
+            className={`m-auto ${slider ? "" : ""}`}
           />
         </div>
         <div className="m-4 space-y-2">
-          <h3 className="font-medium text-lg overflow-hidden text-ellipsis">
-            {name}
-          </h3>
-          <h1 className="font-bold text-xl">${price}</h1>
+          <h3 className="font-medium text-lg">{name}</h3>
+          <h1 className="font-semibold text-xl">${price}</h1>
         </div>
       </Link>
     </div>

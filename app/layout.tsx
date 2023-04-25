@@ -3,7 +3,7 @@ import "./globals.css";
 import { Blinker } from "next/font/google";
 
 const blinker = Blinker({
-  weight: ["400"],
+  weight: ["100", "200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-blinker",
 });
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <TogglerProvider>
-      <html lang="en">
+      <html lang="en" className="scroll-smooth">
         <body className={`${blinker.className}`}>{children}</body>
       </html>
     </TogglerProvider>
