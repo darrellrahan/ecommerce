@@ -7,16 +7,18 @@ function ItemCard({
   name,
   price,
   slider,
+  url,
 }: {
   img: string;
   name: string;
   price: number;
   slider?: boolean;
+  url: string;
 }) {
   return (
     <div className={slider ? "flex-none max-w-[15.75rem]" : ""}>
       <Link
-        href="/"
+        href={url}
         className={`border-2 border-[rgba(0,0,0,.205)] hover:border-black transition-all duration-300 ease-linear flex flex-col ${
           slider ? "gap-0 h-full justify-between" : "gap-8"
         }`}

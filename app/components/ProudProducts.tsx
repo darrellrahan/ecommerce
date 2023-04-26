@@ -18,6 +18,7 @@ function Proud() {
                 img={data.img.display}
                 name={data.name}
                 price={data.price}
+                url={data.url}
               />
             ))}
         </div>

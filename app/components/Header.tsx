@@ -39,17 +39,13 @@ function Header() {
             />
           </Link>
         </div>
-        <div className="flex items-center gap-8 text-2xl">
-          <div>
-            <Link href="/cart">
-              <RiShoppingCartLine />
-            </Link>
-          </div>
-          <div>
-            <button onClick={() => setMobileNavbar(true)}>
-              <RiMenu3Fill />
-            </button>
-          </div>
+        <div className="flex items-center gap-6 text-2xl">
+          <Link href="/cart">
+            <RiShoppingCartLine />
+          </Link>
+          <button onClick={() => setMobileNavbar(true)}>
+            <RiMenu3Fill />
+          </button>
         </div>
       </div>
     </header>

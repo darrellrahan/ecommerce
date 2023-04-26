@@ -47,6 +47,7 @@ function Trending() {
                 name={data.name}
                 price={data.price}
                 slider
+                url={data.url}
               />
             ))}
         </div>

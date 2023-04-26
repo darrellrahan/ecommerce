@@ -15,6 +15,7 @@ function CategoryProducts({ category }: { category: string }) {
                   img={data.img.display}
                   name={data.name}
                   price={data.price}
+                  url={data.url}
                 />
               ))
           : products.map((data) => (
@@ -23,6 +24,7 @@ function CategoryProducts({ category }: { category: string }) {
                 img={data.img.display}
                 name={data.name}
                 price={data.price}
+                url={data.url}
               />
             ))}
       </div>
