@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <Header />
       <MobileNavbar />
+      <Cart />
       <div className="px-6 space-y-16 max-w-screen-xl m-auto">
         <Hero />
         <Proud />

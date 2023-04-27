@@ -1,3 +1,4 @@
+import Cart from "@/app/components/Cart";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import MobileNavbar from "@/app/components/MobileNavbar";
@@ -15,10 +16,16 @@ function page({ params: { id } }: { params: { id: string } }) {
     <main>
       <Header />
       <MobileNavbar />
+      <Cart />
       <div className="px-6 space-y-16 max-w-screen-xl m-auto">
         <ProductDetail
           images={productDetail.img.details}
           name={productDetail.name}
+          description={productDetail.description}
+          price={productDetail.price}
+          texture={productDetail.texture}
+          weight={productDetail.weight}
+          size={productDetail.size}
         />
         <Trending />
       </div>

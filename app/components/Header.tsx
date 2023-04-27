@@ -7,7 +7,7 @@ import { RiShoppingCartLine, RiMenu3Fill } from "react-icons/ri";
 import { useTogglerContext } from "../context/toggler";
 
 function Header() {
-  const { setMobileNavbar } = useTogglerContext();
+  const { setMobileNavbar, setCart } = useTogglerContext();
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -40,9 +40,9 @@ function Header() {
           </Link>
         </div>
         <div className="flex items-center gap-6 text-2xl">
-          <Link href="/cart">
+          <button onClick={() => setCart(true)}>
             <RiShoppingCartLine />
-          </Link>
+          </button>
           <button onClick={() => setMobileNavbar(true)}>
             <RiMenu3Fill />
           </button>

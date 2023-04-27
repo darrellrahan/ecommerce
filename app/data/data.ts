@@ -71,9 +71,9 @@ export const products = [
     img: {
       display: "/images/products/furniture/pulp-unit/display.jpg",
       details: [
-        { id: 1, src: "/images/products/furniture/display.webp" },
-        { id: 2, src: "/images/products/furniture/others-1.jpg" },
-        { id: 3, src: "/images/products/furniture/others-2.jpg" },
+        { id: 1, src: "/images/products/furniture/pulp-unit/display.jpg" },
+        { id: 2, src: "/images/products/furniture/pulp-unit/others-1.jpg" },
+        { id: 3, src: "/images/products/furniture/pulp-unit/others-2.jpg" },
       ],
     },
     price: 79,
@@ -236,7 +236,7 @@ export const products = [
     category: "lamp",
     url: "/product/sun-pendant-lamp",
     description:
-      "The Here Comes The Sun pendant designed by Bertrand Balas is a quality lamp with a unique and magical look. The Here Comes The Sun series has a fantastic expression and especially swhen turned on it creates a very special atmosphere in the room it hangs in. The lamp fits perfectly above both dining room table, kitchen counter, and as living room lighting.",
+      "Here Comes The Sun pendant designed by Bertrand Balas is a quality lamp with a unique and magical look. The Here Comes The Sun series has a fantastic expression and especially swhen turned on it creates a very special atmosphere in the room it hangs in. The lamp fits perfectly above both dining room table, kitchen counter, and as living room lighting.",
     texture: "Plastic",
     weight: "4kg",
     size: "20cm x 20cm",

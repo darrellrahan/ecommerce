@@ -1,3 +1,4 @@
+import Cart from "@/app/components/Cart";
 import CategoryHero from "@/app/components/CategoryHero";
 import CategoryProducts from "@/app/components/CategoryProducts";
 import Footer from "@/app/components/Footer";
@@ -10,6 +11,7 @@ function page({ params: { category } }: { params: { category: string } }) {
     <main>
       <Header />
       <MobileNavbar />
+      <Cart />
       <div className="px-6 space-y-16 max-w-screen-xl m-auto">
         <CategoryHero category={category} />
         <CategoryProducts category={category} />

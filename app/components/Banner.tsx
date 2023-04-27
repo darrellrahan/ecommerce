@@ -17,7 +17,7 @@ function Banner({
     <section id="banner">
       <div className="grid grid-cols-1">
         <div
-          className={`bg-[#f3f3f3] p-8 flex flex-col gap-6 items-baseline ${
+          className={`bg-[#e5e5e5] p-8 flex flex-col gap-6 items-baseline ${
             imgFirst ? "order-last" : ""
           }`}
         >

@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="mt-16">
-      <div className="bg-[#333] py-16 px-20 flex items-center justify-center">
+      <div className="bg-[#191919] py-16 px-20 flex items-center justify-center">
         <div className="w-full space-y-6">
           <h1 className="text-3xl font-bold text-white text-center">
             Newsletter
@@ -15,7 +15,7 @@ function Footer() {
               placeholder="your@email.com"
               className="text-lg text-center p-1"
             />
-            <button className="bg-[#f3f3f3] text-lg p-1">Subscribe</button>
+            <button className="bg-[#e5e5e5] text-lg p-1">Subscribe</button>
           </div>
         </div>
       </div>
