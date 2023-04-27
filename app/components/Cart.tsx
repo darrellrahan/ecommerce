@@ -12,7 +12,7 @@ function Cart() {
     <div
       className={`fixed inset-y-0 right-0 bg-white ${
         cart ? "left-0" : "left-[150%]"
-      } z-50 transition-all duration-300 ease-linear p-6 flex flex-col justify-between overflow-y-scroll`}
+      } z-50 transition-all duration-300 ease-linear p-6 flex flex-col justify-between gap-8 overflow-y-scroll`}
     >
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-bold">Your Shopping Cart (1)</h1>
