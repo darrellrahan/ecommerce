@@ -20,7 +20,10 @@ function Cart() {
           <MdClose />
         </button>
       </div>
-      <div className="h-[30rem] overflow-y-scroll space-y-6">
+      <div className="h-[30rem] overflow-y-scroll pr-4 space-y-6">
+        <CartItem />
+        <CartItem />
+        <CartItem />
         <CartItem />
         <CartItem />
       </div>
