@@ -5,15 +5,15 @@ import React, { useContext, useState, useEffect } from "react";
 type TogglerContextType = {
   mobileNavbar: boolean;
   setMobileNavbar: React.Dispatch<React.SetStateAction<boolean>>;
-  cart: boolean;
-  setCart: React.Dispatch<React.SetStateAction<boolean>>;
+  cartOpen: boolean;
+  setCartOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const TogglerContext = React.createContext<TogglerContextType>({
   mobileNavbar: false,
   setMobileNavbar: () => {},
-  cart: false,
-  setCart: () => {},
+  cartOpen: false,
+  setCartOpen: () => {},
 });
 
 export const useTogglerContext = () => useContext(TogglerContext);
@@ -24,19 +24,19 @@ export const TogglerProvider = ({
   children: React.ReactNode;
 }) => {
   const [mobileNavbar, setMobileNavbar] = useState(false);
-  const [cart, setCart] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = cart || mobileNavbar ? "hidden" : "auto";
-  }, [cart, mobileNavbar]);
+    document.body.style.overflow = cartOpen || mobileNavbar ? "hidden" : "auto";
+  }, [cartOpen, mobileNavbar]);
 
   return (
     <TogglerContext.Provider
       value={{
         mobileNavbar,
         setMobileNavbar,
-        cart,
-        setCart,
+        cartOpen,
+        setCartOpen,
       }}
     >
       {children}

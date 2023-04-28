@@ -5,9 +5,11 @@ import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { RiShoppingCartLine, RiMenu3Fill } from "react-icons/ri";
 import { useTogglerContext } from "../context/toggler";
+import { useCartContext } from "../context/cart";
 
 function Header() {
-  const { setMobileNavbar, setCart } = useTogglerContext();
+  const { setMobileNavbar, setCartOpen } = useTogglerContext();
+  const { cart } = useCartContext();
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -40,12 +42,21 @@ function Header() {
           </Link>
         </div>
         <div className="flex items-center gap-6 text-2xl">
-          <button onClick={() => setCart(true)}>
-            <RiShoppingCartLine />
-          </button>
-          <button onClick={() => setMobileNavbar(true)}>
-            <RiMenu3Fill />
-          </button>
+          <div className="relative">
+            <button onClick={() => setCartOpen(true)}>
+              <RiShoppingCartLine />
+            </button>
+            {cart.length > 0 ? (
+              <span className="absolute -top-3 z-50 -right-1 bg-[#b6002c] w-5 h-5 rounded-full text-white flex items-center justify-center text-[0.95rem]">
+                {cart.length}
+              </span>
+            ) : null}
+          </div>
+          <div>
+            <button onClick={() => setMobileNavbar(true)}>
+              <RiMenu3Fill />
+            </button>
+          </div>
         </div>
       </div>
     </header>

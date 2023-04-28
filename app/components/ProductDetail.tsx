@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { useCartContext } from "../context/cart";
+import { useTogglerContext } from "../context/toggler";
 
 function ProductDetail({
   images,
@@ -23,6 +25,8 @@ function ProductDetail({
   weight: string;
   size: string;
 }) {
+  const { cart, setCart } = useCartContext();
+  const { setCartOpen } = useTogglerContext();
   const [amount, setAmount] = useState(1);
   const [bigImage, setBigImage] = useState(images[0].src);
 
@@ -92,7 +96,30 @@ function ProductDetail({
             </div>
           </div>
           <div className="flex flex-col gap-4 font-semibold text-xl">
-            <button className="border-2 border-black p-3 transition-all duration-300 ease-linear hover:bg-black hover:text-white">
+            <button
+              onClick={() => {
+                if (!cart.find((data) => data.product === name)) {
+                  setCart([
+                    ...cart,
+                    {
+                      product: name,
+                      img: images[0].src,
+                      price: price,
+                      amount: amount,
+                    },
+                  ]);
+                } else {
+                  const newCart = cart.map((data) => {
+                    return data.product === name
+                      ? { ...data, amount: data.amount + amount }
+                      : data;
+                  });
+                  setCart(newCart);
+                }
+                setCartOpen(true);
+              }}
+              className="border-2 border-black p-3 transition-all duration-300 ease-linear hover:bg-black hover:text-white"
+            >
               ADD TO CART
             </button>
             <button className="border-2 border-[#b6002c] bg-[#b6002c] text-white p-3 transition-all duration-300 ease-linear hover:bg-transparent hover:text-[#b6002c]">

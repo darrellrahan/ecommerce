@@ -1,3 +1,4 @@
+import { CartProvider } from "./context/cart";
 import { TogglerProvider } from "./context/toggler";
 import "./globals.css";
 import { Blinker } from "next/font/google";
@@ -21,9 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <TogglerProvider>
-      <html lang="en" className="scroll-smooth">
-        <body className={`${blinker.className}`}>{children}</body>
-      </html>
+      <CartProvider>
+        <html lang="en" className="scroll-smooth">
+          <body className={`${blinker.className}`}>{children}</body>
+        </html>
+      </CartProvider>
     </TogglerProvider>
   );
 }
