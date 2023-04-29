@@ -12,7 +12,7 @@ function Trending() {
     <section id="trending">
       <div className="space-y-8">
         <div className="flex justify-between">
-          <h1 className="text-2xl font-semibold">Trending Now</h1>
+          <h1 className="text-2xl lg:text-3xl font-semibold">Trending Now</h1>
           <div className="flex items-center gap-2">
             <button
               className="bg-[#333] hover:bg-black transition-all duration-300 ease-linear text-white text-2xl p-2"

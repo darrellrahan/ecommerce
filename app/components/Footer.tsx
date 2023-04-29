@@ -9,13 +9,15 @@ function Footer() {
           <h1 className="text-3xl font-bold text-white text-center">
             Newsletter
           </h1>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col lg:flex-row lg:justify-center gap-2">
             <input
               type="email"
               placeholder="your@email.com"
-              className="text-lg text-center p-1"
+              className="text-lg text-center px-1 py-1 lg:px-2 lg:text-left lg:w-60"
             />
-            <button className="bg-[#e5e5e5] text-lg p-1">Subscribe</button>
+            <button className="bg-[#e5e5e5] text-lg px-1 py-1 lg:px-2">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>

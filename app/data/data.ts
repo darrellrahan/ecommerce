@@ -165,7 +165,7 @@ export const products = [
       ],
     },
     price: 115,
-    proud: false,
+    proud: true,
     trending: true,
     category: "furniture",
     url: "/product/shelf-black",
@@ -298,7 +298,7 @@ export const products = [
     },
     price: 119,
     proud: false,
-    trending: false,
+    trending: true,
     category: "chair",
     url: "/product/comfy-chair",
     description:
@@ -320,7 +320,7 @@ export const products = [
     },
     price: 330,
     proud: false,
-    trending: false,
+    trending: true,
     category: "chair",
     url: "/product/copenhagen-armchair",
     description:
@@ -342,7 +342,7 @@ export const products = [
     },
     price: 120,
     proud: false,
-    trending: false,
+    trending: true,
     category: "electronic",
     url: "/product/anti-dark-light",
     description:
@@ -364,7 +364,7 @@ export const products = [
     },
     price: 75,
     proud: false,
-    trending: false,
+    trending: true,
     category: "lamp",
     url: "/product/table-lamp",
     description:
@@ -424,21 +424,25 @@ export const heroGrid = [
     id: 1,
     url: "/categories/furniture",
     text: "Live Comfortably",
+    class: "lg:col-span-2 lg:row-span-2",
   },
   {
     id: 2,
     url: "/categories/skincare",
     text: "HW Skincare",
+    class: "lg:row-span-2",
   },
   {
     id: 3,
     url: "/categories/kitchen",
     text: "Kitchen & Dining",
+    class: "",
   },
   {
     id: 4,
     url: "/categories/electronic",
     text: "Home Electronic",
+    class: "",
   },
 ];
 

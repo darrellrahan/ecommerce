@@ -22,19 +22,21 @@ function MobileNavbar() {
         <AiOutlineClose />
       </button>
       <ul className="flex flex-col items-center gap-8 font-medium text-2xl">
-        {categories.map((data) => (
-          <li key={data.id}>
-            <Link
-              href={data.url}
-              onClick={() => {
-                setMobileNavbar(false);
-              }}
-              className="uppercase"
-            >
-              {data.category === "All" ? "categories" : data.category}
-            </Link>
-          </li>
-        ))}
+        {categories.map((data) =>
+          data.category === "All" ? null : (
+            <li key={data.id}>
+              <Link
+                href={data.url}
+                onClick={() => {
+                  setMobileNavbar(false);
+                }}
+                className="uppercase"
+              >
+                {data.category}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
     </nav>
   );

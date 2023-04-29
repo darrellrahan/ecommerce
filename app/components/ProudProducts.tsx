@@ -8,8 +8,10 @@ function Proud() {
   return (
     <section id="proud">
       <div className="space-y-8">
-        <h1 className="text-2xl font-semibold">Products we are proud of</h1>
-        <div className="grid grid-cols-[1fr] gap-4">
+        <h1 className="text-2xl lg:text-3xl font-semibold">
+          Products we are proud of
+        </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {products
             .filter((data) => data.proud)
             .map((data) => (

@@ -20,10 +20,16 @@ function CartItem({
 
   return (
     <div className="border border-black flex">
-      <div className="basis-1/4 flex items-center justify-center">
-        <Image src={img} alt="img" width={1000} height={1000} />
+      <div className="basis-1/4 lg:basis-1/6 flex items-center justify-center">
+        <Image
+          src={img}
+          alt="img"
+          width={1000}
+          height={1000}
+          className="w-full lg:w-28"
+        />
       </div>
-      <div className="basis-3/4 p-4 bg-[#e5e5e5] flex justify-between gap-8">
+      <div className="basis-3/4 lg:basis-5/6 p-4 bg-[#e5e5e5] flex justify-between gap-8">
         <div className="flex flex-col gap-4 justify-between">
           <div>
             <h1 className="text-xl">{product}</h1>
