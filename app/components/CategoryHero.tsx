@@ -12,11 +12,11 @@ function CategoryHero({ category }: { category: string }) {
         <div
           className={`flex items-center ${
             category === "all" || category === "lamp" || category === "chair"
-              ? "gap-24"
-              : "gap-16"
+              ? "gap-24 lg:gap-[32rem]"
+              : "gap-16 lg:gap-[30rem]"
           }`}
         >
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 lg:text-xl">
             <span>{"<"}</span>
             <span>Home</span>
           </Link>

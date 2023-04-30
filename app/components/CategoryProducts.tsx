@@ -5,7 +5,7 @@ import ItemCard from "./ItemCard";
 function CategoryProducts({ category }: { category: string }) {
   return (
     <section id="category-products">
-      <div className="grid grid-cols-[1fr] gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         {category !== "all"
           ? products
               .filter((data) => data.category === category)

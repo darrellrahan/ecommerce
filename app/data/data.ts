@@ -417,6 +417,28 @@ export const products = [
     weight: "50ml",
     size: "10cm x 5cm",
   },
+  {
+    id: "oak-spanish-chair",
+    name: "Oak Spanish Chair",
+    img: {
+      display: "/images/products/chair/spanish-oak/display.png",
+      details: [
+        { id: 1, src: "/images/products/chair/spanish-oak/display.png" },
+        { id: 2, src: "/images/products/chair/spanish-oak/others-1.webp" },
+        { id: 3, src: "/images/products/chair/spanish-oak/others-2.webp" },
+      ],
+    },
+    price: 520,
+    proud: false,
+    trending: false,
+    category: "chair",
+    url: "/product/oak-spanish-chair",
+    description:
+      "When talking about Børge Mogensen, The Spanish Chair is probably one of the first designs you would think of, which makes good sense as it is also one of his most recognized products around the world.",
+    texture: "Wood",
+    weight: "15kg",
+    size: "60cm x 30cm",
+  },
 ];
 
 export const heroGrid = [
