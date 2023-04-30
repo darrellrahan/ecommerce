@@ -17,7 +17,7 @@ function page({ params: { id } }: { params: { id: string } }) {
       <Header />
       <MobileNavbar />
       <Cart />
-      <div className="px-6 space-y-16 max-w-screen-xl m-auto">
+      <div className="px-6 space-y-16 lg:space-y-24 max-w-screen-xl m-auto">
         <ProductDetail
           images={productDetail.img.details}
           name={productDetail.name}
